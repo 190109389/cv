@@ -11,9 +11,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/ever', function () {
-    return view('ever');
-});
 
 Route::post('/contact/submit', function () {
     dd(Request::all());
