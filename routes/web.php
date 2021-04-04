@@ -4,10 +4,12 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
+use App\Models\UserN;
+use App\Http\Controllers\UploadController;
+use App\Http\Controllers\SendEmailController;
 
-use App\Http\Controllers\BlogController;
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('home');
 });
 
@@ -22,16 +24,10 @@ Route::get('/contact', function () {
 Route::post('/contact/submit', function () {
     dd(Request::all());
 });
+*/
 
-Route::get('/post/create', function () {
-    DB::table('post')->insert([
-        'title' => 'dekavin',
-        'body' => 'its kinda long text'
-    ]
-    );
-});
 
-Route:: get('post',[BlogController::class, 'index']);
+/*Route:: get('post',[BlogController::class, 'index']);
 
 Route::get('post/create', function () {
     return view('create');
@@ -39,4 +35,13 @@ Route::get('post/create', function () {
 
 Route::post('post/create', [BlogController::class, 'store'])->name('add-post');
 
-Route::get('post/{id}', [BlogController::class, 'get_post']);
+
+Route::get('post/{id}', [BlogController::class, 'get_post']);*/
+
+Route::get('post/create', [UploadController::class, 'uploadForm']);
+Route::post('post/create', [UploadController::class, 'uploadSubmit']);
+Route:: get('post',[UploadController::class, 'index']);
+Route::get('post/{id}', [UploadController::class, 'get_post']);
+
+Route::get('/contact', [SendEmailController::class, 'index']);
+Route::post('/contact/send', [SendEmailController::class, 'send']);
