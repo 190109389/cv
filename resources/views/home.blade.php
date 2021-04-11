@@ -76,8 +76,8 @@
     }</style>
 <div id="home">
     <div class="home">
-      <h1>Aruzhan Kabulova</h1>
-      <h2>Web developer</h2>
+      <h1>{{ __("Aruzhan Kabulova") }}</h1>
+      <h2>{{ __("Web developer") }}</h2>
     </div>
   </div>
   <div id="about">
@@ -86,13 +86,19 @@
         <img src="https://sun9-40.userapi.com/impg/OiLVOIwc8ZWgUkB5ZZpamB5yM_33z2bHuSXGpg/cs227ULaujM.jpg?size=2048x2048&quality=96&sign=4a60b99da0016d1b58aabd474ba3e10c&type=album" />
       </div>
       <div class="profil-text">
-        <h2>About</h2>
+        <h2>{{ __("About") }}</h2>
         <p>
-         Cell: 8(705)2859817 <br>
-190103389@stu.sdu.edu.kz <br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+         {{ __("Cell: 8(705)2859817") }} <br><br>
+190103389@stu.sdu.edu.kz <br><br>
+{{ __("Convey information persuasively both orally and in writing. Facility for building positive relationships with others with humor, helpfulness, and cultural sensitivity.") }}
+<br>
+<br>
+{{ __("Interests: Mobilography, Graphic Design, Photoshop.") }}
+<br>
+<br>
+{{ __("Languages: Native in Kazakh, Proficient in Russian, Above-average in English, Beginner in Turkish") }}
         </p>
-        <a href="https://drive.google.com/file/d/1pEmipR2Jzybs1Y3ARRcaFNiR8pzRam0-/view?usp=sharing">Download CV</a>
+        <a href="https://drive.google.com/file/d/1pEmipR2Jzybs1Y3ARRcaFNiR8pzRam0-/view?usp=sharing">{{ __("Download CV") }}</a>
       </div>
       <div class="clear">
       </div>
