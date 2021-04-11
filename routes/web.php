@@ -9,10 +9,10 @@ use App\Http\Controllers\UploadController;
 use App\Http\Controllers\SendEmailController;
 
 
-/* Route::get('/', function () {
+ Route::get('/', function () {
     return view('home');
 });
-
+Route::get('/{lang}', [LocalizationController::class, 'index']);
 Route::get('/skills', function () {
     return view('skills');
 });
@@ -24,7 +24,7 @@ Route::get('/contact', function () {
 Route::post('/contact/submit', function () {
     dd(Request::all());
 });
-*/
+
 
 
 /*Route:: get('post',[BlogController::class, 'index']);
